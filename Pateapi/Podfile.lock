@@ -1,0 +1,28 @@
+PODS:
+  - CAAnimationBlocks (0.0.1)
+  - Masonry (1.1.0)
+  - RBBAnimation (0.3.0)
+  - TTTAttributedLabel (2.0.0)
+
+DEPENDENCIES:
+  - CAAnimationBlocks
+  - Masonry
+  - RBBAnimation
+  - TTTAttributedLabel
+
+SPEC REPOS:
+  trunk:
+    - CAAnimationBlocks
+    - Masonry
+    - RBBAnimation
+    - TTTAttributedLabel
+
+SPEC CHECKSUMS:
+  CAAnimationBlocks: 1aaca5fb6447a95d83b20cc786992956ef46e4ee
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  RBBAnimation: cb6cb419f511434ce932f7d0fabf369612fafb4e
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
+
+PODFILE CHECKSUM: ce2b6433a69cd655da2960af28db24132bf167a7
+
+COCOAPODS: 1.15.2

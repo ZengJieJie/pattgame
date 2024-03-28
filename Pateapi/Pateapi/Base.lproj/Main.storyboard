@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1123213" translatesAutoresizingMaskIntoConstraints="NO" id="MhE-R9-B4e">
+                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="FYy-Or-qgV">
+                                <rect key="frame" x="256" y="-42.666666666666657" width="300" height="300.33333333333326"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="HoH-TQ-VkF"/>
+                                    <constraint firstAttribute="height" constant="300" id="i7e-Nt-Lut"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VbM-do-cgZ">
+                                <rect key="frame" x="286" y="257.66666666666669" width="240" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PE5-6A-9WY">
+                                        <rect key="frame" x="0.0" y="60" width="100" height="40"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="CSZ-d0-clr"/>
+                                            <constraint firstAttribute="height" constant="40" id="Ikg-3a-DEu"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Custom" backgroundImage="451234"/>
+                                        <connections>
+                                            <action selector="zdinyiclick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V7k-tH-kzh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhW-LH-6Pp">
+                                        <rect key="frame" x="140" y="0.0" width="100" height="40"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="58B-aD-zi5"/>
+                                            <constraint firstAttribute="width" constant="100" id="m2Y-yq-9HX"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Dare" backgroundImage="112343"/>
+                                        <connections>
+                                            <action selector="mxz:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uLN-JJ-CyU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ab2-Il-EGY">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="CGu-oN-ZT6"/>
+                                            <constraint firstAttribute="height" constant="40" id="SgT-MH-RM2"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="True" backgroundImage="112343">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="zhenxinclick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5ek-1E-jMc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXB-nT-FeA">
+                                        <rect key="frame" x="140" y="60" width="100" height="40"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="4Go-l3-B2c"/>
+                                            <constraint firstAttribute="width" constant="100" id="NeU-i7-0Dk"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Clear" backgroundImage="451234"/>
+                                        <connections>
+                                            <action selector="clearclick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0kt-U8-4rv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="AB2-Sp-0xN"/>
+                                    <constraint firstAttribute="trailing" secondItem="jhW-LH-6Pp" secondAttribute="trailing" id="DtQ-zg-AHb"/>
+                                    <constraint firstItem="ab2-Il-EGY" firstAttribute="top" secondItem="VbM-do-cgZ" secondAttribute="top" id="KTe-7e-DQJ"/>
+                                    <constraint firstItem="jhW-LH-6Pp" firstAttribute="top" secondItem="VbM-do-cgZ" secondAttribute="top" id="NKM-fF-lty"/>
+                                    <constraint firstAttribute="bottom" secondItem="uXB-nT-FeA" secondAttribute="bottom" id="NQ3-1b-z5a"/>
+                                    <constraint firstItem="ab2-Il-EGY" firstAttribute="leading" secondItem="VbM-do-cgZ" secondAttribute="leading" id="hQz-db-hTS"/>
+                                    <constraint firstItem="PE5-6A-9WY" firstAttribute="leading" secondItem="VbM-do-cgZ" secondAttribute="leading" id="heV-Xg-JL5"/>
+                                    <constraint firstAttribute="trailing" secondItem="uXB-nT-FeA" secondAttribute="trailing" id="ivP-tW-XIL"/>
+                                    <constraint firstAttribute="height" constant="100" id="t9j-Xd-B2A"/>
+                                    <constraint firstAttribute="bottom" secondItem="PE5-6A-9WY" secondAttribute="bottom" id="yYg-Pq-nUI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="MhE-R9-B4e" secondAttribute="bottom" id="2q4-Qc-0eZ"/>
+                            <constraint firstItem="MhE-R9-B4e" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6Th-gL-2OH"/>
+                            <constraint firstItem="MhE-R9-B4e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Apx-4B-bmD"/>
+                            <constraint firstAttribute="trailing" secondItem="MhE-R9-B4e" secondAttribute="trailing" id="Bb0-cE-unm"/>
+                            <constraint firstItem="FYy-Or-qgV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BeH-hn-hCc"/>
+                            <constraint firstItem="FYy-Or-qgV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-80" id="Idg-ZY-7KR"/>
+                            <constraint firstItem="VbM-do-cgZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="120" id="NaU-ZK-xSs"/>
+                            <constraint firstItem="VbM-do-cgZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pmp-bI-GrY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1123213" width="2796" height="1290"/>
+        <image name="112343" width="880" height="162"/>
+        <image name="451234" width="438" height="149"/>
+        <image name="logo" width="722" height="642"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
