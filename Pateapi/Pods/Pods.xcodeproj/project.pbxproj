@@ -225,7 +225,7 @@
 		90EF4B7E4F22762EE31E921E4C5DC916 /* Pods-Pateapi-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pateapi-acknowledgements.markdown"; sourceTree = "<group>"; };
 		91F8E55F7815EBF4FC04FED2192EE1C8 /* Pods-Pateapi-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pateapi-umbrella.h"; sourceTree = "<group>"; };
 		95023D6F19C200460B459B3D90681088 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F95E9C49BFFAB76F19260E2092B0995 /* TTTAttributedLabel-framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "TTTAttributedLabel-framework.release.xcconfig"; sourceTree = "<group>"; };
 		A12CAB60CB0F81169425F3BDE2D5D94C /* RBBAnimation-framework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "RBBAnimation-framework.release.xcconfig"; sourceTree = "<group>"; };
 		A17C0238C2BA5F73A999614E92E26DEE /* TTTAttributedLabel-library */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "TTTAttributedLabel-library"; path = "libTTTAttributedLabel-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -239,7 +239,7 @@
 		BB880D9AF6622C43709C454BAE68ECC9 /* CAAnimationBlocks-library */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "CAAnimationBlocks-library"; path = "libCAAnimationBlocks-library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC5F692AB8A651F63A53F3E473A643DA /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		BE0E81CD22B4057BD6F89D1D622C7A87 /* Masonry-framework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-framework-prefix.pch"; sourceTree = "<group>"; };
-		BE434D009145704A045457D8BFC4CAFE /* Pods-Pateapi */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Pateapi"; path = Pods_Pateapi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE434D009145704A045457D8BFC4CAFE /* Pods_Pateapi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pateapi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0786F118B3E26F6BD1BC9FD631F6FBF /* RBBAnimation-framework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RBBAnimation-framework-umbrella.h"; sourceTree = "<group>"; };
 		C13815D909D45637CC3B5DA31A47539F /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
 		C154B4CF5CF73A1AC2C2D5537EE56912 /* Masonry-library-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Masonry-library-dummy.m"; path = "../Masonry-library/Masonry-library-dummy.m"; sourceTree = "<group>"; };
@@ -395,7 +395,6 @@
 				0006E1B5402130B7A0DA53FC1D1A66A3 /* RBBTweenAnimation.m */,
 				A7E76163B14CA008AAFCCDD9436C0CFB /* Support Files */,
 			);
-			name = RBBAnimation;
 			path = RBBAnimation;
 			sourceTree = "<group>";
 		};
@@ -437,7 +436,6 @@
 				BC5F692AB8A651F63A53F3E473A643DA /* ViewController+MASAdditions.m */,
 				71E818F83D34CE966FDEF0B0EAB8113A /* Support Files */,
 			);
-			name = Masonry;
 			path = Masonry;
 			sourceTree = "<group>";
 		};
@@ -486,7 +484,6 @@
 				70DF1BD96CE50B4755705648DEFF2912 /* CAAnimation+Blocks.m */,
 				8EA9224A0D393B36FE3CB48D4B67FC68 /* Support Files */,
 			);
-			name = CAAnimationBlocks;
 			path = CAAnimationBlocks;
 			sourceTree = "<group>";
 		};
@@ -497,7 +494,7 @@
 				BB880D9AF6622C43709C454BAE68ECC9 /* CAAnimationBlocks-library */,
 				583D6FA239B7F427269910C135962BDE /* Masonry-framework */,
 				378824EB3199DDA369747AA02F23AC76 /* Masonry-library */,
-				BE434D009145704A045457D8BFC4CAFE /* Pods-Pateapi */,
+				BE434D009145704A045457D8BFC4CAFE /* Pods_Pateapi.framework */,
 				389AE2D01DAD76F065791E4C45929F1C /* RBBAnimation-framework */,
 				5B58E5F658730600A1FBB3D1DFE7C8A4 /* RBBAnimation-library */,
 				0E4E431F4D53E7E14B13484F924156AC /* TTTAttributedLabel-framework */,
@@ -540,7 +537,6 @@
 				E396B7202AA771CBA8FED1755F4FCA73 /* TTTAttributedLabel.m */,
 				CA24D6B7B4EE738A3A68A2C1D1EABF77 /* Support Files */,
 			);
-			name = TTTAttributedLabel;
 			path = TTTAttributedLabel;
 			sourceTree = "<group>";
 		};
@@ -856,7 +852,7 @@
 			);
 			name = "Pods-Pateapi";
 			productName = Pods_Pateapi;
-			productReference = BE434D009145704A045457D8BFC4CAFE /* Pods-Pateapi */;
+			productReference = BE434D009145704A045457D8BFC4CAFE /* Pods_Pateapi.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		FC6417E3866876CE475CBBC8C9424279 /* RBBAnimation-framework */ = {

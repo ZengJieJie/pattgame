@@ -176,16 +176,16 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/CAAnimationBlocks-framework/CAAnimationBlocks.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Masonry-framework/Masonry.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RBBAnimation-framework/RBBAnimation.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/TTTAttributedLabel-framework/TTTAttributedLabel.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CAAnimationBlocks/CAAnimationBlocks.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RBBAnimation/RBBAnimation.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TTTAttributedLabel/TTTAttributedLabel.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/CAAnimationBlocks-framework/CAAnimationBlocks.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Masonry-framework/Masonry.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RBBAnimation-framework/RBBAnimation.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/TTTAttributedLabel-framework/TTTAttributedLabel.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CAAnimationBlocks/CAAnimationBlocks.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RBBAnimation/RBBAnimation.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/TTTAttributedLabel/TTTAttributedLabel.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
