@@ -305,8 +305,6 @@
                     self.stringtext=dmx[arc4random_uniform(dmx.count)];
                     [self uiviewaler];
                 }
-   
-    
 }
 
 

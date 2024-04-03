@@ -1,28 +1,38 @@
 PODS:
+  - AppsFlyerFramework (6.13.2):
+    - AppsFlyerFramework/Main (= 6.13.2)
+  - AppsFlyerFramework/Main (6.13.2)
   - CAAnimationBlocks (0.0.1)
   - Masonry (1.1.0)
   - RBBAnimation (0.3.0)
+  - SAMKeychain (1.5.3)
   - TTTAttributedLabel (2.0.0)
 
 DEPENDENCIES:
+  - AppsFlyerFramework
   - CAAnimationBlocks
   - Masonry
   - RBBAnimation
+  - SAMKeychain
   - TTTAttributedLabel
 
 SPEC REPOS:
   trunk:
+    - AppsFlyerFramework
     - CAAnimationBlocks
     - Masonry
     - RBBAnimation
+    - SAMKeychain
     - TTTAttributedLabel
 
 SPEC CHECKSUMS:
+  AppsFlyerFramework: 39efd4d2523ca9e3234805aea0c6b3c3a4a387d1
   CAAnimationBlocks: 1aaca5fb6447a95d83b20cc786992956ef46e4ee
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   RBBAnimation: cb6cb419f511434ce932f7d0fabf369612fafb4e
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
 
-PODFILE CHECKSUM: 4deba2e618988aa55b08937d5fbe7f8fb8177cb4
+PODFILE CHECKSUM: 21c78a9f7f7c708870ed353c0cd7412aac39d47e
 
 COCOAPODS: 1.15.2

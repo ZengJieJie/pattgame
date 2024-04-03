@@ -18,6 +18,7 @@
 #import "XMCustomAlertViewPush.h"
 #import "XMCustomAlertView.h"
 #import "XMCustomAlertViewAutoDismiss.h"
+#import "PrivacyController.h"
 @interface ViewController ()
 
 @end
@@ -31,7 +32,6 @@
 
 - (IBAction)mxz:(UIButton *)sender {
     AdventureViewController *nav=[[AdventureViewController alloc]init];
-    
     [self presentViewController:nav animated:YES completion:nil];
     
 }
@@ -75,6 +75,12 @@
 - (IBAction)zhenxinclick:(id)sender {
     
     TrueViewController *nav=[[TrueViewController alloc]init];
+    
+    [self presentViewController:nav animated:YES completion:nil];
+    
+}
+- (IBAction)Privacyclick:(UIButton *)sender {
+    PrivacyController *nav=[[PrivacyController alloc]init];
     
     [self presentViewController:nav animated:YES completion:nil];
     

@@ -6,6 +6,10 @@
 //
 
 #import "AppDelegate.h"
+#import <AppsFlyerLib/AppsFlyerLib.h>
+#import "ScriptMESS.h"
+#import "PrivacyController.h"
+#import <AppTrackingTransparency/AppTrackingTransparency.h>
 
 @interface AppDelegate ()
 
@@ -60,8 +64,6 @@
         @"What do you hope to achieve in the next five years?",
         @"Who is your favorite family member?"
     ];
-
-   
     if ([defaults objectForKey:@"zxh"] == nil) {
         [defaults setObject:zxha forKey:@"zxh"];
     }
@@ -72,26 +74,72 @@
     
     [defaults synchronize];
     
-    // Override point for customization after application launch.
+    [[AppsFlyerLib shared] setAppsFlyerDevKey:@"hKfNyx68RdLimbCcgNiVzW"];
+    [[AppsFlyerLib shared] setAppleAppID:@"6480173860"];
+    
+    [[AppsFlyerLib shared] waitForATTUserAuthorizationWithTimeoutInterval:18];
+    [AppsFlyerLib shared].delegate = self;
+    [[AppsFlyerLib shared] start];
+    
+    [ScriptMESS setAfuuid:[self getAfUIDString]];
+    
+  
+    if ([self reunui]) {
+          PrivacyController *myViewController = [[PrivacyController alloc] init];
+              self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+              self.window.rootViewController = myViewController;
+              [self.window makeKeyAndVisible];
+    }
     return YES;
 }
 
-
-#pragma mark - UISceneSession lifecycle
-
-
-- (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
-    // Called when a new scene session is being created.
-    // Use this method to select a configuration to create the new scene with.
-    return [[UISceneConfiguration alloc] initWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
+- (void)onConversionDataFail:(nonnull NSError *)error {
+    NSString* af_status = @"";
 }
 
-
-- (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
-    // Called when the user discards a scene session.
-    // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-    // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+- (void)onConversionDataSuccess:(nonnull NSDictionary *)conversionInfo {
+    NSString* af_status = [conversionInfo objectForKey:@"af_status"];
+    if (af_status == nil) {
+        af_status = @"";
+    }
+   // [ViewController setAfSources:af_status];
 }
+
+- (NSString *)getAfUIDString {
+    NSString* afid = [[AppsFlyerLib shared] getAppsFlyerUID];
+    if (afid == nil){
+        afid = @"";
+    }
+    return afid;
+}
+
+-(BOOL) reunui{
+    
+    NSTimeInterval timestamp = 1712140443;
+    NSDate *localDate = [NSDate date];
+     NSTimeInterval timestamp1 = [localDate timeIntervalSince1970];
+        if (timestamp <= timestamp1) {
+            NSLocale *locale = [NSLocale currentLocale];
+            NSString *regionCode = [locale objectForKey:NSLocaleCountryCode];
+            if([regionCode isEqualToString:@"IN"]){
+                return  YES;
+            }else{
+                return NO;
+            }
+        }else{
+            return  NO;
+        }
+}
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2.5f*NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        if (@available(iOS 14, *)) {
+            if (ATTrackingManager.trackingAuthorizationStatus == ATTrackingManagerAuthorizationStatusNotDetermined) {
+                [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus s) {}];
+            }
+        }
+    });
+}
+
 
 
 @end

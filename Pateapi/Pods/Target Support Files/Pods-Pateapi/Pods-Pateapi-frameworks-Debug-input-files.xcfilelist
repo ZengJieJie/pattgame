@@ -2,4 +2,5 @@ ${PODS_ROOT}/Target Support Files/Pods-Pateapi/Pods-Pateapi-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/CAAnimationBlocks/CAAnimationBlocks.framework
 ${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework
 ${BUILT_PRODUCTS_DIR}/RBBAnimation/RBBAnimation.framework
+${BUILT_PRODUCTS_DIR}/SAMKeychain/SAMKeychain.framework
 ${BUILT_PRODUCTS_DIR}/TTTAttributedLabel/TTTAttributedLabel.framework

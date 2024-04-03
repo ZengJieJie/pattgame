@@ -6,9 +6,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AppsFlyerLib/AppsFlyerLib.h>
+@interface AppDelegate : UIResponder <UIApplicationDelegate,AppsFlyerLibDelegate>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
+@property (strong, nonatomic) UIWindow * window;
 
 @end
 

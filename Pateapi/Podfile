@@ -14,7 +14,9 @@ target 'Pateapi' do
     pod 'RBBAnimation'
     pod 'TTTAttributedLabel'
      pod 'Masonry'
-  
+     pod 'AppsFlyerFramework'
+     pod 'SAMKeychain'
+     
   post_install do |installer|
     installer.pods_project.targets.each do |target|
       target.build_configurations.each do |config|

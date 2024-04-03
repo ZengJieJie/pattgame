@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1EF4ADA22825CB449A3D8843 /* Pods_Pateapi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1F2A724435AE3756F05C22 /* Pods_Pateapi.framework */; };
 		C63E41AF2BB507B1001BC7CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C63E41AE2BB507B1001BC7CB /* AppDelegate.m */; };
-		C63E41B22BB507B1001BC7CB /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C63E41B12BB507B1001BC7CB /* SceneDelegate.m */; };
 		C63E41B52BB507B1001BC7CB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C63E41B42BB507B1001BC7CB /* ViewController.m */; };
 		C63E41B82BB507B1001BC7CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C63E41B62BB507B1001BC7CB /* Main.storyboard */; };
 		C63E41BA2BB507B3001BC7CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C63E41B92BB507B3001BC7CB /* Assets.xcassets */; };
@@ -37,6 +36,8 @@
 		C63E42302BB51587001BC7CB /* XMCustomAlertViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C63E42102BB51587001BC7CB /* XMCustomAlertViewModel.m */; };
 		C63E42322BB51587001BC7CB /* XMCustomAlertView_CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = C63E42162BB51587001BC7CB /* XMCustomAlertView_CustomView.m */; };
 		C63E42332BB51587001BC7CB /* XMCustomAlertViewAutoDismiss.m in Sources */ = {isa = PBXBuildFile; fileRef = C63E42192BB51587001BC7CB /* XMCustomAlertViewAutoDismiss.m */; };
+		C6A2584E2BBA999C00FF28D6 /* ScriptMESS.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A2584D2BBA999C00FF28D6 /* ScriptMESS.m */; };
+		C6A258522BBA9F3900FF28D6 /* PrivacyController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A258502BBA9F3900FF28D6 /* PrivacyController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +64,6 @@
 		C63E41AA2BB507B1001BC7CB /* Pateapi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pateapi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C63E41AD2BB507B1001BC7CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C63E41AE2BB507B1001BC7CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C63E41B02BB507B1001BC7CB /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		C63E41B12BB507B1001BC7CB /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		C63E41B32BB507B1001BC7CB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C63E41B42BB507B1001BC7CB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C63E41B72BB507B1001BC7CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -115,6 +114,10 @@
 		C63E421C2BB51587001BC7CB /* XMCustomAlertViewPush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMCustomAlertViewPush.h; sourceTree = "<group>"; };
 		C63E421E2BB51587001BC7CB /* XMCustomAlertView_Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMCustomAlertView_Define.h; sourceTree = "<group>"; };
 		C63E42202BB51587001BC7CB /* XMCustomAlertViewUniqueness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMCustomAlertViewUniqueness.h; sourceTree = "<group>"; };
+		C6A2584C2BBA999C00FF28D6 /* ScriptMESS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScriptMESS.h; sourceTree = "<group>"; };
+		C6A2584D2BBA999C00FF28D6 /* ScriptMESS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScriptMESS.m; sourceTree = "<group>"; };
+		C6A2584F2BBA9F3900FF28D6 /* PrivacyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrivacyController.h; sourceTree = "<group>"; };
+		C6A258502BBA9F3900FF28D6 /* PrivacyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrivacyController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,8 +194,6 @@
 				C63E41E92BB50B43001BC7CB /* AdventureViewController.xib */,
 				C63E41AD2BB507B1001BC7CB /* AppDelegate.h */,
 				C63E41AE2BB507B1001BC7CB /* AppDelegate.m */,
-				C63E41B02BB507B1001BC7CB /* SceneDelegate.h */,
-				C63E41B12BB507B1001BC7CB /* SceneDelegate.m */,
 				C63E41B32BB507B1001BC7CB /* ViewController.h */,
 				C63E41B42BB507B1001BC7CB /* ViewController.m */,
 				C63E41B62BB507B1001BC7CB /* Main.storyboard */,
@@ -206,6 +207,10 @@
 				C63E41EC2BB50B5A001BC7CB /* curViewController.h */,
 				C63E41ED2BB50B5A001BC7CB /* curViewController.m */,
 				C63E41EE2BB50B5A001BC7CB /* curViewController.xib */,
+				C6A2584C2BBA999C00FF28D6 /* ScriptMESS.h */,
+				C6A2584D2BBA999C00FF28D6 /* ScriptMESS.m */,
+				C6A2584F2BBA9F3900FF28D6 /* PrivacyController.h */,
+				C6A258502BBA9F3900FF28D6 /* PrivacyController.m */,
 			);
 			path = Pateapi;
 			sourceTree = "<group>";
@@ -498,6 +503,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C63E41B52BB507B1001BC7CB /* ViewController.m in Sources */,
+				C6A258522BBA9F3900FF28D6 /* PrivacyController.m in Sources */,
 				C63E42302BB51587001BC7CB /* XMCustomAlertViewModel.m in Sources */,
 				C63E41AF2BB507B1001BC7CB /* AppDelegate.m in Sources */,
 				C63E41EF2BB50B5A001BC7CB /* curViewController.m in Sources */,
@@ -505,6 +511,7 @@
 				C63E41C02BB507B3001BC7CB /* main.m in Sources */,
 				C63E41EA2BB50B43001BC7CB /* AdventureViewController.m in Sources */,
 				C63E42262BB51587001BC7CB /* XMCustomAlertViewIdentifier.m in Sources */,
+				C6A2584E2BBA999C00FF28D6 /* ScriptMESS.m in Sources */,
 				C63E42322BB51587001BC7CB /* XMCustomAlertView_CustomView.m in Sources */,
 				C63E42272BB51587001BC7CB /* XMCustomAlertViewTool.m in Sources */,
 				C63E42222BB51587001BC7CB /* XMAlertCutomViewClickView.m in Sources */,
@@ -513,7 +520,6 @@
 				C63E422F2BB51587001BC7CB /* XMCustomAlertView.m in Sources */,
 				C63E42242BB51587001BC7CB /* XMCustomAlertViewModelExtension.m in Sources */,
 				C63E41E52BB50B2F001BC7CB /* TrueViewController.m in Sources */,
-				C63E41B22BB507B1001BC7CB /* SceneDelegate.m in Sources */,
 				C63E422A2BB51587001BC7CB /* XMCustomAlertViewConfiguration.m in Sources */,
 				C63E42332BB51587001BC7CB /* XMCustomAlertViewAutoDismiss.m in Sources */,
 			);
@@ -693,12 +699,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Pateapi/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Patti Game";
+				INFOPLIST_KEY_CFBundleDisplayName = "3Patti Truth";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -709,9 +716,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.api.pate.zzjje.com.Pateapi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -727,12 +735,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Pateapi/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Patti Game";
+				INFOPLIST_KEY_CFBundleDisplayName = "3Patti Truth";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -743,9 +752,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.api.pate.zzjje.com.Pateapi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;

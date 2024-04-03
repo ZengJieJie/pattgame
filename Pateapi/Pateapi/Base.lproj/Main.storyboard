@@ -100,10 +100,26 @@
                                     <constraint firstAttribute="bottom" secondItem="PE5-6A-9WY" secondAttribute="bottom" id="yYg-Pq-nUI"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxK-Uk-6bN">
+                                <rect key="frame" x="682" y="30" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="AAK-ae-Cgr"/>
+                                    <constraint firstAttribute="height" constant="40" id="zas-61-rQz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="privacy" backgroundImage="456456456">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Privacyclick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YMc-qY-LTn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lxK-Uk-6bN" secondAttribute="trailing" constant="30" id="2R9-Jn-iK5"/>
                             <constraint firstAttribute="bottom" secondItem="MhE-R9-B4e" secondAttribute="bottom" id="2q4-Qc-0eZ"/>
                             <constraint firstItem="MhE-R9-B4e" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6Th-gL-2OH"/>
                             <constraint firstItem="MhE-R9-B4e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Apx-4B-bmD"/>
@@ -112,6 +128,7 @@
                             <constraint firstItem="FYy-Or-qgV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-80" id="Idg-ZY-7KR"/>
                             <constraint firstItem="VbM-do-cgZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="120" id="NaU-ZK-xSs"/>
                             <constraint firstItem="VbM-do-cgZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pmp-bI-GrY"/>
+                            <constraint firstItem="lxK-Uk-6bN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="vIu-Rq-qBV"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -124,12 +141,13 @@
         <image name="1123213" width="2796" height="1290"/>
         <image name="112343" width="880" height="162"/>
         <image name="451234" width="438" height="149"/>
-        <image name="logo" width="722" height="642"/>
+        <image name="456456456" width="340" height="128"/>
+        <image name="logo" width="871" height="776"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
